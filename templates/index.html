@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pumpkin Seed Classifier</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .container { background: white; padding: 30px; border-radius: 8px; max-width: 500px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; background-color: #28a745; color: white; padding: 10px; border: none; margin-top: 20px; cursor: pointer; font-size: 16px; border-radius: 4px; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Harvesting Brilliance</h1>
+          <h2 style="width: 100%; text-align: center;">By Sanket Kokate</h2>
+        <p style="text-align:center;">Enter Seed Metrics</p>
+        <form action="/predict" method="POST">
+            <label>Area:</label>
+            <input type="text" name="Area" required placeholder="e.g. 0.41">
+            
+            <label>Perimeter:</label>
+            <input type="text" name="Perimeter" required placeholder="e.g. 0.34">
+            
+            <label>Major Axis Length:</label>
+            <input type="text" name="Major_Axis_Length" required placeholder="e.g. 0.29">
+            
+            <label>Solidity:</label>
+            <input type="text" name="Solidity" required placeholder="e.g. 0.99">
+            
+            <label>Extent:</label>
+            <input type="text" name="Extent" required placeholder="e.g. 0.71">
+            
+            <label>Roundness:</label>
+            <input type="text" name="Roundness" required placeholder="e.g. 0.84">
+            
+            <label>Aspect Ratio:</label>
+            <input type="text" name="Aspect_Ration" required placeholder="e.g. 1.78">
+            
+            <label>Compactness:</label>
+            <input type="text" name="Compactness" required placeholder="e.g. 0.74">
+            
+            <button type="submit">Predict Variety</button>
+        </form>
+    </div>
+</body>
+</html>
